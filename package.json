@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@9.11.0",
   "scripts": {
+    "build": "rimraf packages/*/dist --glob && pnpm -F @introxd/* run build",
     "release": "bumpp -r",
     "lint": "eslint . --flag unstable_ts_config",
     "docs:dev": "pnpm -F introxd-docs run docs:dev",
@@ -19,6 +20,7 @@
     "eslint": "9.9.0",
     "fast-glob": "^3.3.2",
     "jiti": "^2.0.0",
+    "rimraf": "^6.0.1",
     "typescript": "^5.6.2",
     "unocss": "^0.62.4",
     "unplugin-auto-import": "^0.18.3",
