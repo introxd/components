@@ -15,6 +15,7 @@
     "@iconify/json": "^2.2.253",
     "@imba97/eslint-config": "^0.0.3",
     "@types/node": "^22.7.4",
+    "bumpp": "^9.5.2",
     "eslint": "9.9.0",
     "fast-glob": "^3.3.2",
     "jiti": "^2.0.0",
