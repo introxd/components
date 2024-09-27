@@ -42,6 +42,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Build Components
+        run: pnpm bc
+
       - name: Build with VitePress
         run: pnpm docs:build
 
