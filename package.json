@@ -3,6 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@9.11.0",
+  "author": "imba97",
+  "license": "MIT",
+  "homepage": "https://introxd.github.io/components/",
+  "bugs": {
+    "url": "https://github.com/introxd/components/issues"
+  },
+  "keywords": [
+    "introxd",
+    "vue3",
+    "components"
+  ],
   "scripts": {
     "build": "rimraf packages/*/dist --glob && pnpm -F @introxd/* run build",
     "release": "bumpp -r",
