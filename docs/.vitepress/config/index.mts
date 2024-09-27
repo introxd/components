@@ -7,6 +7,8 @@ export default defineConfig({
   title: 'Intro 🤣',
   description: 'Introxd 组件库',
 
+  base: '/components/',
+
   themeConfig: {
     nav: generateNavConfig(),
     sidebar: generateSidebarConfig(),
