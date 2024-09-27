@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "vite/client"
+    ],
+    "declaration": true
+  },
+  "include": [
+    "src/index.ts",
+    "src/resolver.ts",
+    "src/components/**/*.vue",
+    ".auto-import/**/*"
+  ]
+}
