@@ -27,7 +27,7 @@ features:
 
   - icon: <span i-iconamoon-component-fill bg="#5672cd"></span>
     title: 组件
-    link: /components/
+    link: /components/icon-text
     linkText: 查看组件
 ---
 
