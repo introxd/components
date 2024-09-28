@@ -5,6 +5,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
 import unocss from 'unocss/vite'
+import autoImport from 'unplugin-auto-import/vite'
 
 const r = (path: string) => fileURLToPath(new URL(path, import.meta.url))
 
@@ -15,7 +16,14 @@ export default defineConfig({
       tsconfigPath: r('./tsconfig.build.json'),
       insertTypesEntry: true
     }),
-    unocss()
+    unocss(),
+    autoImport({
+      dts: r('./.auto-import/auto-import.d.ts'),
+      imports: [
+        'vue'
+      ],
+      vueTemplate: true
+    })
   ],
   build: {
     lib: {

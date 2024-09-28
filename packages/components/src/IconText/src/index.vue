@@ -15,7 +15,6 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
 import { IconTextFont, IconTextPreset } from '../types'
 
 const props = defineProps<{
