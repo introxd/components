@@ -46,7 +46,7 @@ import { IconTextFont } from '@introxd/components'
 </template>
 
 <script lang="ts" setup>
-import { IconTextFont, IconTextPreset } from '@introxd/components'
+import { IconTextPreset } from '@introxd/components'
 </script>
 ```
 
@@ -72,10 +72,6 @@ import { IconTextFont, IconTextPreset } from '@introxd/components'
     Introxd
   </IxIconText>
 </template>
-
-<script lang="ts" setup>
-import { IconTextFont, IconTextPreset } from '@introxd/components'
-</script>
 ```
 
 <script setup>
