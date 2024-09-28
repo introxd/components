@@ -21,13 +21,14 @@
     "docs:dev": "pnpm -F introxd-docs run docs:dev",
     "docs:build": "pnpm -F introxd-docs run docs:build",
     "docs:preview": "pnpm -F introxd-docs run docs:preview",
-    "bc": "pnpm -F @introxd/components run build"
+    "bc": "pnpm -F @introxd/components run build",
+    "clean": "rimraf node_modules && rimraf --glob packages/*/node_modules"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.253",
+    "@iconify/json": "^2.2.254",
     "@imba97/eslint-config": "^0.0.3",
     "@types/node": "^22.7.4",
-    "bumpp": "^9.5.2",
+    "bumpp": "^9.6.1",
     "eslint": "9.9.0",
     "fast-glob": "^3.3.2",
     "jiti": "^2.0.0",
