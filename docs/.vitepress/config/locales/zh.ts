@@ -53,7 +53,7 @@ export const zh = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '指南', link: '/guide/installation' },
-    { text: '组件', link: '/components' }
+    { text: '组件', link: '/components/icon-text' }
   ]
 }
 

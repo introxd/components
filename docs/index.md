@@ -1,10 +1,10 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "Introxd 组件"
   tagline: "introxd.com 中使用的组件"
+
   actions:
     - theme: brand
       text: 开始
@@ -16,12 +16,19 @@ hero:
     width: 200
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: <span i-gis-route bg="#5672cd"></span>
+    title: 从项目出发
+    details: 从项目中提取的组件，直接明了的展示组件功能
+
+  - icon: <span i-gis-signpost bg="#5672cd"></span>
+    title: 指南
+    link: /guide/installation
+    linkText: 查看指南
+
+  - icon: <span i-iconamoon-component-fill bg="#5672cd"></span>
+    title: 组件
+    link: /components/
+    linkText: 查看组件
 ---
 
 <style>
