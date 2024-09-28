@@ -1,20 +1,10 @@
-import { defineConfig } from 'vitepress'
+import { mergeConfig } from 'vitepress'
 
-import generateSidebarConfig from './sidebars'
-import generateNavConfig from './nav'
+import shared from './shared'
+import { zh } from './locales/zh'
 
-export default defineConfig({
-  title: 'Intro 🤣',
-  description: 'Introxd 组件库',
-
-  base: '/components/',
-
-  themeConfig: {
-    nav: generateNavConfig(),
-    sidebar: generateSidebarConfig(),
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/introxd/components' }
-    ]
+export default mergeConfig(shared, {
+  locales: {
+    root: { label: '简体中文', ...zh }
   }
 })

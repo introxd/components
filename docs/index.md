@@ -10,6 +10,11 @@ hero:
       text: 开始
       link: /guide/installation
 
+  image:
+    src: /images/logo.png
+    alt: Introxd
+    width: 200
+
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -18,3 +23,9 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+<style>
+.image-src {
+  --uno: rounded-xl;
+}
+</style>
