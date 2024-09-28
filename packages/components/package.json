@@ -2,11 +2,22 @@
   "name": "@introxd/components",
   "type": "module",
   "version": "0.0.1",
+  "author": "imba97",
+  "license": "MIT",
+  "homepage": "https://introxd.github.io/components",
   "repository": {
     "type": "git",
     "url": "https://github.com/introxd/components",
     "directory": "packages/components"
   },
+  "bugs": {
+    "url": "https://github.com/introxd/components/issues"
+  },
+  "keywords": [
+    "introxd",
+    "vue3",
+    "components"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
