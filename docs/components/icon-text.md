@@ -57,7 +57,7 @@ import { IconTextPreset } from '@introxd/components'
     博客
   </IxIconText>
 
-  <IxIconText src="/components/images/favicon.png" icon-class="size-6 rounded-sm" href="https://introxd.com">
+  <IxIconText src="/images/favicon.png" icon-class="size-6 rounded-sm" href="https://introxd.com">
     Introxd
   </IxIconText>
 </div>
@@ -68,7 +68,7 @@ import { IconTextPreset } from '@introxd/components'
     博客
   </IxIconText>
 
-  <IxIconText src="/components/images/favicon.png" icon-class="size-6" href="https://introxd.com">
+  <IxIconText src="/images/favicon.png" icon-class="size-6" href="https://introxd.com">
     Introxd
   </IxIconText>
 </template>
