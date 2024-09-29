@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Introxd',
 
-  base: '/components/',
   sitemap: {
     hostname: 'https://introxd.github.io/components/'
   },
