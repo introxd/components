@@ -2,14 +2,10 @@ import { type DefaultTheme, defineConfig } from 'vitepress'
 
 export const zh = defineConfig({
   lang: 'zh',
-
   description: 'Introxd 组件库',
-
-  base: '/components/',
 
   themeConfig: {
     nav: nav(),
-
     sidebar: {
       '/guide/': sidebarGuide(),
       '/components/': sidebarComponents()
