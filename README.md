@@ -1,7 +1,7 @@
 <h1 align="center">Intro 🤣 Components</h1>
 
 <p align="center">
-  <a href="https://introxd.github.io/components/">Documentation</a>
+  <a href="https://docs.introxd.com">Documentation</a>
   |
   <a href="https://github.com/introxd/components">Github</a>
 </p>

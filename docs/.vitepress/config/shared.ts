@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'Introxd',
 
   sitemap: {
-    hostname: 'https://introxd.github.io/components/'
+    hostname: 'https://docs.introxd.com/'
   },
 
   lastUpdated: true,
