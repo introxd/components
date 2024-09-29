@@ -2,8 +2,9 @@
 layout: home
 
 hero:
-  name: "Introxd 组件"
-  tagline: "introxd.com 中使用的组件"
+  name: 组件库
+  text: Ix Components
+  tagline: introxd.com 中使用的组件
 
   actions:
     - theme: brand
