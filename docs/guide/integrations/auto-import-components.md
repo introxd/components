@@ -10,6 +10,8 @@ pnpm add unplugin-vue-components -D
 
 ## Vite
 
+以 Vite 为例
+
 ```ts
 import { defineConfig } from 'vite'
 
