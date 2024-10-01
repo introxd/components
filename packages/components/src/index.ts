@@ -1,3 +1,3 @@
 import 'virtual:uno.css'
 
-export * from './IconText'
+export * from './components/IconText'

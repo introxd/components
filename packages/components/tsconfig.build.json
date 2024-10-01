@@ -9,7 +9,7 @@
   "include": [
     "src/index.ts",
     "src/resolver.ts",
-    "src/components/**/*.vue",
+    "src/components/**/*",
     ".auto-import/**/*"
   ]
 }
