@@ -58,7 +58,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     {
       text: '指南',
       items: [
-        { text: '安装', link: '/guide/installation' }
+        { text: '安装', link: '/guide/installation' },
+        { text: '自动引入组件', link: '/guide/auto-import-components' }
       ]
     }
   ]
