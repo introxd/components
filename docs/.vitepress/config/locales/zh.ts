@@ -2,7 +2,9 @@ import { type DefaultTheme, defineConfig } from 'vitepress'
 
 export const zh = defineConfig({
   lang: 'zh',
-  description: 'Introxd 组件库',
+
+  title: 'Introxd 组件库',
+  description: 'Introxd 组件库, Introxd Components',
 
   themeConfig: {
     nav: nav(),

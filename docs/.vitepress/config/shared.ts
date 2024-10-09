@@ -1,8 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Introxd',
-
   sitemap: {
     hostname: 'https://docs.introxd.com/'
   },
