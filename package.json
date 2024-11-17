@@ -2,7 +2,7 @@
   "name": "introxd-components",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@9.13.2",
   "author": "imba97",
   "license": "MIT",
   "homepage": "https://docs.introxd.com",
@@ -26,22 +26,22 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.254",
+    "@iconify/json": "^2.2.273",
     "@imba97/eslint-config": "^0.0.3",
-    "@types/node": "^22.7.4",
-    "bumpp": "^9.6.1",
+    "@types/node": "^22.9.0",
+    "bumpp": "^9.8.1",
     "eslint": "9.9.0",
     "fast-glob": "^3.3.2",
-    "jiti": "^2.0.0",
+    "jiti": "^2.4.0",
     "lint-staged": "^15.2.10",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
     "typescript": "5.5.4",
     "unocss": "^0.62.4",
-    "unplugin-auto-import": "^0.18.3",
+    "unplugin-auto-import": "^0.18.4",
     "unplugin-vue-components": "^0.27.4",
-    "vite": "^5.4.8",
-    "vitepress": "^1.3.4"
+    "vite": "^5.4.11",
+    "vitepress": "^1.5.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
