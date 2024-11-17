@@ -1,5 +1,6 @@
 {
   "name": "introxd-components",
+  "type": "module",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@9.13.2",
@@ -27,7 +28,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.273",
-    "@imba97/eslint-config": "^0.0.3",
+    "@imba97/eslint-config": "^0.0.4",
     "@types/node": "^22.9.0",
     "bumpp": "^9.8.1",
     "eslint": "9.9.0",
