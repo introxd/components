@@ -32,9 +32,13 @@ import { IconTextFont } from '@introxd/components'
 
 ## 预设
 
-<div my-8>
+<div my-8 flex items-center>
   <IxIconText :preset="IconTextPreset.Github" href="introxd/components">
     introxd/components
+  </IxIconText>
+
+  <IxIconText :preset="IconTextPreset.Initx" icon-class="i-mdi-github bg-[#f4cb25] size-6" href="https://github.com/initx-collective/initx">
+    Initx
   </IxIconText>
 </div>
 
@@ -42,6 +46,10 @@ import { IconTextFont } from '@introxd/components'
 <template>
   <IxIconText :preset="IconTextPreset.Github" href="introxd/components">
     introxd/components
+  </IxIconText>
+
+  <IxIconText :preset="IconTextPreset.Initx" icon-class="i-mdi-github bg-[#f4cb25] size-6" href="https://github.com/initx-collective/initx">
+    Initx
   </IxIconText>
 </template>
 
