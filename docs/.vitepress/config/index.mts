@@ -1,7 +1,7 @@
 import { mergeConfig } from 'vitepress'
 
-import shared from './shared'
 import { zh } from './locales/zh'
+import shared from './shared'
 
 export default mergeConfig(shared, {
   locales: {

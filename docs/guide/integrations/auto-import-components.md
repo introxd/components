@@ -13,10 +13,10 @@ pnpm add unplugin-vue-components -D
 以 Vite 为例
 
 ```ts
-import { defineConfig } from 'vite'
+import IntroxdResolver from '@introxd/components/resolver'
 
 import components from 'unplugin-vue-components/vite'
-import IntroxdResolver from '@introxd/components/resolver'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [

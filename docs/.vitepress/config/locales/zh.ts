@@ -80,7 +80,11 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
     {
       text: '组件',
       items: [
-        { text: '图标文字', link: '/components/icon-text' }
+        { text: '图标文字', link: '/components/icon-text' },
+        {
+          text: '赛博朋克故障效果',
+          link: '/components/cyberpunk-glitch'
+        }
       ]
     }
   ]

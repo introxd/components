@@ -1,12 +1,12 @@
-import { URL, fileURLToPath } from 'node:url'
+import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite'
+import IntroxdResolver from '@introxd/components/resolver'
 
 import unocss from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
 import components from 'unplugin-vue-components/vite'
 
-import IntroxdResolver from '@introxd/components/resolver'
+import { defineConfig } from 'vite'
 
 const r = (path: string) => fileURLToPath(new URL(path, import.meta.url))
 
