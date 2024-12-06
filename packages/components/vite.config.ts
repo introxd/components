@@ -1,11 +1,12 @@
-import { URL, fileURLToPath } from 'node:url'
-
-import { defineConfig } from 'vite'
+import { fileURLToPath, URL } from 'node:url'
 
 import vue from '@vitejs/plugin-vue'
-import dts from 'vite-plugin-dts'
+
+import lodashImports from 'lodash-imports'
 import unocss from 'unocss/vite'
 import autoImport from 'unplugin-auto-import/vite'
+import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 const r = (path: string) => fileURLToPath(new URL(path, import.meta.url))
 
@@ -20,7 +21,8 @@ export default defineConfig({
     autoImport({
       dts: r('./.auto-import/auto-import.d.ts'),
       imports: [
-        'vue'
+        'vue',
+        lodashImports()
       ],
       vueTemplate: true
     })
