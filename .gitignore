@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 .auto-import
+eslint.config.js
 
 # docs
 docs/.vitepress/cache
