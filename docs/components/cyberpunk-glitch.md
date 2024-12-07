@@ -47,3 +47,12 @@
   </IxCyberpunkGlitch>
 </template>
 ```
+
+## 感谢
+
+<div fyc>
+  <div>纯CSS制作赛博朋克2077“故障风”按钮</div>
+  <IxIconText icon-class="i-simple-icons-bilibili bg-[#00aeec]" href="https://b23.tv/BV15A411s7cX">
+    教程视频
+  </IxIconText>
+</div>
