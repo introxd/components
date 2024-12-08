@@ -1,6 +1,7 @@
 export enum IconTextPreset {
   Github,
-  Initx
+  Initx,
+  Bilibili
 }
 
 export enum IconTextFont {

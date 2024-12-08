@@ -37,6 +37,10 @@ import { IconTextFont } from '@introxd/components'
     introxd/components
   </IxIconText>
 
+  <IxIconText :preset="IconTextPreset.Bilibili" href="BV1sm4KeJEkF">
+    组件库
+  </IxIconText>
+
   <IxIconText :preset="IconTextPreset.Initx" icon-class="i-mdi-github bg-[#f4cb25] size-6" href="https://github.com/initx-collective/initx">
     Initx
   </IxIconText>
@@ -50,6 +54,10 @@ import { IconTextFont } from '@introxd/components'
 
   <IxIconText :preset="IconTextPreset.Initx" icon-class="i-mdi-github bg-[#f4cb25] size-6" href="https://github.com/initx-collective/initx">
     Initx
+  </IxIconText>
+
+  <IxIconText :preset="IconTextPreset.Bilibili" href="BV15A411s7cX">
+    组件库
   </IxIconText>
 </template>
 

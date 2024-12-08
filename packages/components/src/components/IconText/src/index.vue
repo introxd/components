@@ -54,6 +54,11 @@ const presetClass = computed(() => {
       defaultBg = 'bg-[rgba(26,26,26,0.9)] hover:bg-[rgba(52,52,52,0.8)]'
       break
     }
+
+    case IconTextPreset.Bilibili: {
+      defaultIcon = 'i-simple-icons-bilibili bg-[#00aeec]'
+      break
+    }
   }
 
   return {
@@ -75,6 +80,9 @@ function getHref() {
   switch (props.preset) {
     case IconTextPreset.Github:
       return `https://github.com/${props.href}`
+
+    case IconTextPreset.Bilibili:
+      return `https://bilibili.com/video/${props.href}`
   }
 }
 
