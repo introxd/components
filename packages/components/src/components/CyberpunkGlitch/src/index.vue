@@ -12,21 +12,21 @@
 
   .text {
 
-    &>.text-before,
-    &>.text-after {
+    &>.text-glitch,
+    &>.text-glitch-blur {
       --uno: pa top-0 right-0 bottom-0 left-0;
       text-shadow: var(--slice-shadow-1);
       clip-path: var(--slice-0);
     }
 
-    &>.text-after {
+    &>.text-glitch-blur {
       --uno: blur-2;
     }
 
     &.animate-glitch {
 
-      &>.text-before,
-      &>.text-after {
+      &>.text-glitch,
+      &>.text-glitch-blur {
         animation: glitch .3s infinite steps(1, end);
       }
     }
@@ -69,17 +69,19 @@
 </style>
 
 <template>
-  <div class="text-container" pr text-8>
+  <div class="text-container" pr>
     <div
       pr class="text"
       :class="isPlaying ? 'animate-glitch animate-flash animate-duration-300 animate-count-infinite' : ''"
     >
-      <slot :class="props.contentClass" />
-      <div class="text-before" :class="props.contentClass">
-        <slot />
+      <div :class="props.contentClass">
+        <slot :is-playing />
       </div>
-      <div class="text-after" :class="props.contentClass">
-        <slot />
+      <div class="text-glitch" :class="props.contentClass">
+        <slot :is-playing />
+      </div>
+      <div class="text-glitch-blur" :class="props.contentClass">
+        <slot :is-playing />
       </div>
     </div>
     <slot name="background" :is-playing />
