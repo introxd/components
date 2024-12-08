@@ -5,12 +5,12 @@
 ## 文字
 
 <div p-4 rounded-md bg-slate-950>
-  <IxCyberpunkGlitch text-white>Cyberpunk Glitch</IxCyberpunkGlitch>
+  <IxCyberpunkGlitch text="white 8">Cyberpunk Glitch</IxCyberpunkGlitch>
 </div>
 
 ```vue
 <template>
-  <IxCyberpunkGlitch text-white>
+  <IxCyberpunkGlitch text="white 8">
     Cyberpunk Glitch
   </IxCyberpunkGlitch>
 </template>
@@ -44,6 +44,22 @@
 <template>
   <IxCyberpunkGlitch>
     <div size-20 bg-lime-6 rounded-md />
+  </IxCyberpunkGlitch>
+</template>
+```
+
+## 是否正在播放
+
+<div p-4 rounded-md bg-slate-950>
+  <IxCyberpunkGlitch v-slot="{ isPlaying }">
+    <span text-8 :class="isPlaying ? 'text-dark-1' : 'text-white'">Cyberpunk Glitch</span>
+  </IxCyberpunkGlitch>
+</div>
+
+```vue
+<template>
+  <IxCyberpunkGlitch v-slot="{ isPlaying }">
+    <span text-8 :class="isPlaying ? 'text-dark-1' : 'text-white'">Cyberpunk Glitch</span>
   </IxCyberpunkGlitch>
 </template>
 ```
