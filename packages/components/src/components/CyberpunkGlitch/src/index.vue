@@ -1,11 +1,6 @@
 <style lang="scss" scoped>
 .text-container {
   --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(15% 0 65% 0);
-  --slice-2: inset(30% 0 50% 0);
-  --slice-3: inset(50% 0 35% 0);
-  --slice-4: inset(60% 0 20% 0);
-  --slice-5: inset(80% 0 10% 0);
 
   --slice-shadow-1: -1px -1px 0 #F8F005, 1px 1px 0 #00E6F6;
   --slice-shadow-2: -2px -2px 0 #F8F005, 2px 2px 0 #00E6F6;
@@ -36,40 +31,40 @@
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
-    transform: translate(0, -5px);
+    transform: var(--translate-1);
   }
 
   20% {
     clip-path: var(--slice-5);
-    transform: translate(10px, -5px);
+    transform: var(--translate-5);
   }
 
   40% {
     clip-path: var(--slice-2);
-    transform: translate(0, 0);
+    transform: var(--translate-2);
   }
 
   60% {
     clip-path: var(--slice-5);
-    transform: translate(-10px, 5px);
+    transform: var(--translate-5);
     text-shadow: var(--slice-shadow-2);
   }
 
   80% {
     clip-path: var(--slice-3);
-    transform: translate(3px, 0);
+    transform: var(--translate-3);
   }
 
   100% {
     clip-path: var(--slice-4);
-    transform: translate(10px, 0);
+    transform: var(--translate-4);
     text-shadow: var(--slice-shadow-2);
   }
 }
 </style>
 
 <template>
-  <div class="text-container" pr>
+  <div ref="textContainer" class="text-container" pr>
     <div
       pr class="text"
       :class="isPlaying ? 'animate-glitch animate-flash animate-duration-300 animate-count-infinite' : ''"
@@ -95,6 +90,8 @@ const props = withDefaults(defineProps<{
 
 })
 
+const container = useTemplateRef<HTMLDivElement>('textContainer')
+
 const isPlaying = ref(false)
 
 onMounted(() => {
@@ -102,6 +99,21 @@ onMounted(() => {
 })
 
 async function playAnimate() {
+  if (container.value) {
+    for (let i = 1; i <= 5; i++) {
+      const left = _random(10, 80)
+      const right = 100 - left - _random(5, 20)
+      container.value.style.setProperty(
+        `--slice-${i}`,
+        `inset(${left}% 0 ${right}% 0)`
+      )
+      container.value.style.setProperty(
+        `--translate-${i}`,
+        `translate(${_random(-15, 15)}px, ${_random(-5, 5)}px)`
+      )
+    }
+  }
+
   isPlaying.value = true
 
   const playTime = _random(200, 1200)
