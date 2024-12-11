@@ -32,7 +32,8 @@ export default defineConfig({
       entry: {
         index: r('./src/index.ts'),
         resolver: r('./src/resolver.ts')
-      }
+      },
+      cssFileName: 'style'
     },
     rollupOptions: {
       external: ['vue'],
