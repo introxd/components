@@ -84,6 +84,10 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
         {
           text: '赛博朋克故障效果',
           link: '/components/cyberpunk-glitch'
+        },
+        {
+          text: '流光灯效果',
+          link: '/components/flowing-light'
         }
       ]
     }
