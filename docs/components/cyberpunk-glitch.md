@@ -66,7 +66,7 @@
 
 ## 感谢
 
-<div fyc>
+<div fyc flex-wrap>
   <div>纯 CSS 制作赛博朋克2077“故障风”按钮</div>
 
   <IxIconText :preset="IconTextPreset.Bilibili" href="BV15A411s7cX">
