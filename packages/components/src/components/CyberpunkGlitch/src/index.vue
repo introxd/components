@@ -86,8 +86,15 @@
 <script lang="ts" setup>
 const props = withDefaults(defineProps<{
   contentClass?: string
+  translateX?: number[]
+  translateY?: number[]
+  duration?: number[]
+  interval?: number[]
 }>(), {
-
+  translateX: () => [-15, 15],
+  translateY: () => [-5, 5],
+  duration: () => [200, 1200],
+  interval: () => [2000, 5000]
 })
 
 const container = useTemplateRef<HTMLDivElement>('textContainer')
@@ -107,16 +114,20 @@ async function playAnimate() {
         `--slice-${i}`,
         `inset(${left}% 0 ${right}% 0)`
       )
+
+      const [minX, maxX] = props.translateX
+      const [minY, maxY] = props.translateY
       container.value.style.setProperty(
         `--translate-${i}`,
-        `translate(${_random(-15, 15)}px, ${_random(-5, 5)}px)`
+        `translate(${_random(minX, maxX)}px, ${_random(minY, maxY)}px)`
       )
     }
   }
 
   isPlaying.value = true
 
-  const playTime = _random(200, 1200)
+  const [minDuration, maxDuration] = props.duration
+  const playTime = _random(minDuration, maxDuration)
 
   await new Promise((resolve) => {
     setTimeout(() => {
@@ -125,9 +136,9 @@ async function playAnimate() {
     }, playTime)
   })
 
-  const interval = _random(2000, 5000)
+  const [minInterval, maxInterval] = props.interval
   setTimeout(() => {
     playAnimate()
-  }, interval)
+  }, _random(minInterval, maxInterval))
 }
 </script>
