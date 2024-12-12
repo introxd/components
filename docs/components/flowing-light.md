@@ -4,7 +4,7 @@
 
 ## 基础
 
-<div py-4>
+<div p-8 rounded-md bg-slate-950>
   <IxFlowingLight h-2 w-full bg-class="rounded-full" />
 </div>
 
@@ -16,7 +16,7 @@
 
 ## 遮罩
 
-<div>
+<div p-4 rounded-md inline-block bg-slate-950>
   <IxFlowingLight mask="/masks/cross.png" size-50 />
 </div>
 
