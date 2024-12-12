@@ -25,7 +25,19 @@ export default defineConfig({
         lodashImports()
       ],
       vueTemplate: true
-    })
+    }),
+    {
+      name: 'inject-var-h-plugin',
+      generateBundle(options, bundle) {
+        const file = bundle['index.js'] as any
+
+        if (!file) {
+          return
+        }
+
+        file.code = `var h;\n${file.code}`
+      }
+    }
   ],
   build: {
     lib: {
@@ -36,12 +48,7 @@ export default defineConfig({
       cssFileName: 'style'
     },
     rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue'
-        }
-      }
+      external: ['vue']
     }
   },
 
