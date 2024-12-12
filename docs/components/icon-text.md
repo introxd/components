@@ -32,7 +32,7 @@ import { IconTextFont } from '@introxd/components'
 
 ## 预设
 
-<div my-8 flex items-center>
+<div my-8 fyc flex-wrap gap-y-2>
   <IxIconText :preset="IconTextPreset.Github" href="introxd/components">
     introxd/components
   </IxIconText>
