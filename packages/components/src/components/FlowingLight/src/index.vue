@@ -1,7 +1,7 @@
 <style lang="scss" scoped>
 .flowing-light {
-  background: linear-gradient(30deg, #ffcc00, deeppink, #9c27b0);
-  animation: hueRotate 3s infinite alternate;
+  background: linear-gradient(30deg, #ff0000, #ff9900, #33cc33, #3399ff, #9900cc);
+  animation: hueRotate 3s infinite linear;
 }
 
 .mask-bg {
@@ -10,7 +10,10 @@
 }
 
 @keyframes hueRotate {
-  100% {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
     filter: hue-rotate(360deg);
   }
 }
