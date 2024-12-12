@@ -1,5 +1,6 @@
 {
   "name": "introxd-docs",
+  "type": "module",
   "version": "0.0.6",
   "private": true,
   "scripts": {
