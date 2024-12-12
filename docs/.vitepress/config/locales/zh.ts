@@ -86,7 +86,11 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
           link: '/components/cyberpunk-glitch'
         },
         {
-          text: '流光灯效果',
+          text: '赛博朋克警戒线',
+          link: '/components/cyberpunk-cordon'
+        },
+        {
+          text: '流光灯',
           link: '/components/flowing-light'
         }
       ]
