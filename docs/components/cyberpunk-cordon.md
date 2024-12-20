@@ -22,7 +22,7 @@
 
 ## 图片
 
-<div py-4 rounded-md bg-slate-950>
+<div py-4 rounded-md bg-dark-3>
   <IxCyberpunkCordon bg-class="bg-black bg-opacity-50">
     <div w-48>
       <img src="/images/jinx.png" w-48 rounded-md>
@@ -32,7 +32,7 @@
 
 ```vue
 <template>
-  <IxCyberpunkCordon bg-class="bg-transparent">
+  <IxCyberpunkCordon bg-class="bg-black bg-opacity-50">
     <div w-48>
       <img src="/images/jinx.png" w-48 rounded-md>
     </div>
