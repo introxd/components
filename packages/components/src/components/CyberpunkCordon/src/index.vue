@@ -26,9 +26,9 @@
 </style>
 
 <template>
-  <div pr w-full class="cyberpunk-cordon">
+  <div pr class="cyberpunk-cordon">
     <div class="mask" :class="props.bgClass">
-      <div class="marquee" pt="1.5" leading-none blur-1>
+      <div :class="props.marquee ? 'marquee' : ''" pt="1.5" leading-none blur-1>
         <slot />
       </div>
     </div>
@@ -37,9 +37,11 @@
 </template>
 
 <script lang="ts" setup>
-const props = withDefaults(defineProps < {
+const props = withDefaults(defineProps<{
   bgClass?: string
-} > (), {
-  bgClass: 'bg-amber'
+  marquee?: boolean
+}>(), {
+  bgClass: 'bg-amber',
+  marquee: true
 })
 </script>
