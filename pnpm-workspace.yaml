@@ -1,3 +1,7 @@
 packages:
-  - 'packages/*'
+  - packages/*
   - docs
+onlyBuiltDependencies:
+  - esbuild
+  - simple-git-hooks
+  - unrs-resolver
