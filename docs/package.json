@@ -9,6 +9,8 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@introxd/components": "workspace:*"
+    "@introxd/components": "workspace:*",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.16"
   }
 }

@@ -37,6 +37,8 @@
 </template>
 
 <script lang="ts" setup>
+defineOptions({ name: 'IxCyberpunkCordon' })
+
 const props = withDefaults(defineProps<{
   bgClass?: string
   marquee?: boolean

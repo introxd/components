@@ -39,6 +39,8 @@
 </template>
 
 <script lang="ts" setup>
+defineOptions({ name: 'IxFlowingLight' })
+
 const props = defineProps<{
   mask?: string
   bgClass?: string

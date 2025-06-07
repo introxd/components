@@ -22,17 +22,15 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     },
     "./resolver": {
       "types": "./dist/resolver.d.ts",
-      "import": "./dist/resolver.js",
-      "require": "./dist/resolver.cjs"
+      "import": "./dist/resolver.js"
     },
     "./style.css": "./dist/style.css"
   },
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [

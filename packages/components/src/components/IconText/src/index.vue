@@ -20,6 +20,8 @@
 <script lang="ts" setup>
 import { IconTextFont, IconTextPreset } from '../types'
 
+defineOptions({ name: 'IxIconText' })
+
 const props = defineProps<{
   preset?: IconTextPreset
   fontPreset?: IconTextFont

@@ -84,6 +84,8 @@
 </template>
 
 <script lang="ts" setup>
+defineOptions({ name: 'IxCyberpunkGlitch' })
+
 const props = withDefaults(defineProps<{
   contentClass?: string
   translateX?: number[]
