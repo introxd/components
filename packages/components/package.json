@@ -1,7 +1,7 @@
 {
   "name": "@introxd/components",
   "type": "module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Introxd Components, Vue 3 components library",
   "author": "imba97",
   "license": "MIT",
