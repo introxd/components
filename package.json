@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.9",
   "private": true,
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.11.1",
   "author": "imba97",
   "license": "MIT",
   "homepage": "https://docs.introxd.com",
@@ -18,7 +18,7 @@
   "scripts": {
     "build": "rimraf packages/*/dist --glob && pnpm -F @introxd/* run build",
     "release": "bumpp -r",
-    "lint": "eslint . --flag unstable_ts_config",
+    "lint": "eslint --cache",
     "docs:dev": "pnpm -F introxd-docs run docs:dev",
     "docs:build": "pnpm -F introxd-docs run docs:build",
     "docs:preview": "pnpm -F introxd-docs run docs:preview",
@@ -27,19 +27,19 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.340",
+    "@iconify/json": "^2.2.346",
     "@imba97/eslint-config": "^0.0.6",
-    "@types/node": "^22.15.21",
+    "@types/node": "^22.15.30",
     "bumpp": "^10.1.1",
-    "eslint": "9.9.0",
+    "eslint": "^9.28.0",
     "jiti": "^2.4.2",
-    "lint-staged": "^16.0.0",
+    "lint-staged": "^16.1.0",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.13.0",
     "typescript": "5.5.4",
-    "unocss": "^66.1.2",
-    "unplugin-auto-import": "^19.2.0",
-    "unplugin-vue-components": "^28.5.0",
+    "unocss": "^66.1.3",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.7.0",
     "vite": "^6.3.5",
     "vitepress": "^1.6.3"
   },
@@ -47,6 +47,6 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --flag unstable_ts_config --fix"
+    "*": "eslint --cache --fix"
   }
 }
